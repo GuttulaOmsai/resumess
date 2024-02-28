@@ -1,0 +1,266 @@
+@import url();
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' sans-serif;
+}
+body{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background-color: aliceblue;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+.container .left_Side{
+    position: relative;
+    background-color: rgb(4, 39, 39);
+    padding: 40px;
+}
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.profileText .imgBx{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profileText .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profileText h2{
+    color: #ffffff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profileText h2 span{
+font-size: 0.8em;
+font-weight: 300;
+}
+.contactInfo{
+    padding-top: 40px;
+}
+.title{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contactInfo ul{
+    position: relative;
+}
+.contactInfo ul li{
+    list-style: none;
+    position: relative;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contactInfo ul li .icon{
+display: inline-block;
+width: 30px;
+font-size: 18px;
+color: #03a9f4;
+}
+.contactInfo ul li span{
+    color: #ffffff;
+    font-weight: 300;
+}
+/* education section*/
+.contactInfo_education li{
+margin-bottom: 15px;
+}
+.contactInfo_education h5{
+    color: #108fdf;
+    font-weight: 500;
+    }
+    .contactInfo_education h4{
+        color: #ffffff;
+        font-weight: 500;
+        }
+        .contactInfo_education h4:nth-child(2){
+            color: #ffffff;
+            font-weight: 500;
+            }
+        .contactInfo_education h3{
+          margin-top: 20px;
+          color: #ffffff;
+          text-transform: uppercase;
+          font-weight: 600;
+          letter-spacing: 1px;
+            }
+            /* language section*/
+            .contactInfo_languag h3{
+                margin-top: 20px;
+                color: #ffffff;
+                text-transform: uppercase;
+                font-weight: 600;
+                letter-spacing: 1px;
+                  }
+                  .contactInfo_languag .percent{
+                  position: relative;
+                  width: 100%;
+                  height: 6px;
+                  background-color: rgb(10, 24, 28);
+                  display: block;
+                  margin-top: 5px;
+                  }
+                  .contactInfo_languag .text{
+                    color: #ffffff;
+                  }
+                  .contactInfo_languag .percent div{
+                   position: absolute;
+                   top: 0;
+                   left: 0;
+                   height: 100%;
+                   background-color: #03a9f4;
+                  }
+    /* right side section*/
+    .about{
+        margin-bottom: 50px;
+    }
+    .about:last-child{
+        margin-bottom: 0;
+    }
+    .about h2{
+        margin-top: -25px;
+    }
+    .title2{
+        color: #073854;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        margin-top: -30px;
+    }
+    p{
+        color: #333;
+    }
+    .about .box{
+        display: flex;
+        flex-direction: row;
+        margin: 20px 0;
+    }
+    .about .box .year_company{
+        min-width: 200px;
+    }
+    .about .box .year_company h5{
+        text-transform: uppercase;
+        color: #082330;
+        font-weight: 600;
+    }
+    .about .box .text h4{
+        text-transform: uppercase;
+        color: rgb(200, 11, 143);
+        font-size: 16px;
+    }
+
+
+.container .right_Side{
+    position: relative;
+    background-color: rgb(250, 254, 254);
+    padding: 40px;
+}
+.about_skills .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.about_skills .box h4{
+text-transform: uppercase;
+color: #333;
+font-weight: 500;
+
+}
+ul{
+    color: #03a9f4;
+}
+.about_skills .box  .percent{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: #f7f7f7;
+}
+.about_skills .box  .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgb(13, 76, 119);
+}
+/* your skills*/
+.about_Interset ul{
+    display: grid;
+    grid-template-columns:repeat(4,1fr)
+}
+.about_Interset ul li{
+    list-style: none;
+    color: #082330;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.about_Interset ul li .fa{
+color: #074561;
+font-size: 18px;
+width: 20px;
+}
+.about_Interset .title2{
+    margin-top: 20px;
+}
+
+/*media quries added in tab view*/
+@media (max-width:1000px){
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .about_Interset ul{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+/*media quries added in mobile view*/
+@media (max-width:600px){
+   .about .box{
+    flex-direction: column;
+   }
+   .about .box .year_company{
+    
+   }
+   .about_Interset ul{
+    grid-template-columns: repeat(1,1fr);
+   }
+   .about_skills .box{
+    grid-template-columns: repeat(1,1fr);
+   }
+}
